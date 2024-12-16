@@ -50,7 +50,7 @@ if isTimRom; then
 
     ui_print " » Custom ROM recognition: Tim's Signature ";
     ui_print " » Initiating vibration fix deployment "
-    ui_print " » Executing Hatsune-Miku Flasher....";
+    ui_print " » Executing Ram (ラム) Flasher....";
 
     split_boot;
     patch_cmdline initcall_blacklist initcall_blacklist=
@@ -72,7 +72,7 @@ elif isDerp; then
     rm -rf $ramdisk/overlay.d;
 
     ui_print " » Custom ROM recognition: DerpFest's detected ";
-    ui_print " » Executing Hatsune-Miku Flasher....";
+    ui_print " » Executing Ram (ラム) Flasher....";
 
     dump_boot;
     write_boot;
@@ -91,7 +91,7 @@ else
     rm -rf $ramdisk/overlay;
     rm -rf $ramdisk/overlay.d;
 
-    ui_print " » Executing Hatsune-Miku Flasher...";
+    ui_print " » Executing Ram (ラム) Flasher...";
 
     dump_boot;
     write_boot;
