@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Barong-kernel by hnkksk
+kernel.string=Phoenix-kernel by hnkksk
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=vayu
-device.name2=bhima
+device.name1=whyred
+device.name2=whyred
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -50,7 +50,7 @@ if isTimRom; then
 
     ui_print " » Custom ROM recognition: Tim's Signature ";
     ui_print " » Initiating vibration fix deployment "
-    ui_print " » Executing Ram (ラム) Flasher Let's Beast Your Vayu....";
+    ui_print " » Executing PhoenixnFlasher Let's Beast Your Whyred...";
 
     split_boot;
     patch_cmdline initcall_blacklist initcall_blacklist=
@@ -72,7 +72,7 @@ elif isDerp; then
     rm -rf $ramdisk/overlay.d;
 
     ui_print " » Custom ROM recognition: DerpFest's detected ";
-    ui_print " » Executing Ram (ラム) Flasher Let's Beast Your vayu...";
+    ui_print " » Executing Phoenix Flasher Let's Beast Your Whyred...";
 
     dump_boot;
     write_boot;
@@ -91,7 +91,7 @@ else
     rm -rf $ramdisk/overlay;
     rm -rf $ramdisk/overlay.d;
 
-    ui_print " » Executing Ram (ラム) Flasher let's beast your vayu...";
+    ui_print " » Executing Phoenix Flasher let's beast your Whyred...";
 
     dump_boot;
     write_boot;
