@@ -10,8 +10,8 @@ do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=begonia
-device.name2=begoniain
+device.name1=whyred
+device.name2=whyred
 supported.versions=
 supported.patchlevels=
 '; } # end properties
@@ -50,7 +50,7 @@ if isTimRom; then
 
     ui_print " » Custom ROM recognition: Tim's Signature ";
     ui_print " » Initiating vibration fix deployment "
-    ui_print " » Let The Hunts Begin StriX Flasher Let's Make It Beast!...";
+    ui_print " » Let The Hunts Begin KRATOS Flasher Let's Make It Beast!...";
 
     split_boot;
     patch_cmdline initcall_blacklist initcall_blacklist=
@@ -72,7 +72,7 @@ elif isDerp; then
     rm -rf $ramdisk/overlay.d;
 
     ui_print " » Custom ROM recognition: DerpFest's detected ";
-    ui_print " » Let The Hunts Begin StriX Flasher Let's Make It Beast!...";
+    ui_print " » Let The Hunts Begin KRATOS Flasher Let's Make It Beast!...";
 
     dump_boot;
     write_boot;
@@ -91,7 +91,7 @@ else
     rm -rf $ramdisk/overlay;
     rm -rf $ramdisk/overlay.d;
 
-    ui_print " » Let The Hunts Begin StriX Flasher Let's Make It Beast!...";
+    ui_print " » Let The Hunts Begin KRATOS Flasher Let's Make It Beast!...";
 
     dump_boot;
     write_boot;
