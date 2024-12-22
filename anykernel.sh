@@ -4,14 +4,14 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Sirius-kernel by hnkksk
+kernel.string=Sirius-kernel by Rey4 KANNA3
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=1
-device.name1=whyred
-device.name2=whyred
+device.name1=begonia
+device.name2=begonia
 supported.versions=
 supported.patchlevels=
 '; } # end properties
